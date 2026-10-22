@@ -20,7 +20,7 @@
     .card { background: #eaf2ff; border: 1px solid #c8daff; border-radius: 8px; padding: 18px; }
     .card h3 { margin-top: 0; }
     /* CAMBIO 6: cambia el color de este botón a #15803d. */
-    button { background: #174ea6; color: white; padding: 12px 20px; border: 0; border-radius: 7px; cursor: pointer; }
+    button { background: #15803d; color: white; padding: 12px 20px; border: 0; border-radius: 7px; cursor: pointer; }
     button:hover { opacity: 0.9; }
     #resultado { font-weight: bold; }
     footer { text-align: center; padding: 20px; color: #64748b; }
@@ -50,7 +50,8 @@
       <h2>Módulos del curso</h2>
       <div class="cards">
         <div class="card"><h3>Git</h3><p>Control de versiones.</p></div>
-        <div class="card"><h3>GitHub</h3><p>Repositorios remotos.</p></div>
+        <div class="card"><h3>GitHub</h3><p<!-- CAMBIO 5: añade debajo otro párrafo con el texto "Esta web está versionada con Git". -->>Repositorios remotos.</p></div>
+        <p>Esta web está versionada con Git.</p>
         <div class="card"><h3>GitHub Actions</h3><p>Integración continua.</p></div>
         <div class="card"><h3>Docker</h3><p>Contenedores y despliegue web.</p></div>
       </div>
@@ -60,7 +61,7 @@
       <h2>Prueba interactiva</h2>
       <p>Pulsa el botón para comprobar que el JavaScript funciona.</p>
       <!-- CAMBIO 6: cambia el texto del botón por "Comprobar práctica". -->
-      <button type="button" onclick="mostrarMensaje()">Probar aplicación</button>
+      <button type="button" onclick="mostrarMensaje()">Comprobar práctica</button>
       <p id="resultado" aria-live="polite"></p>
     </section>
   </main>
